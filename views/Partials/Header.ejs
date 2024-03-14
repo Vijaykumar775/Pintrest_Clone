@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <% if(nav === true){ %>
+
+    <div class="w-full px-10 py-3 flex justify-between items-center font-semibold text-xl bg-zinc-800 text-white">
+      <h3>Pintrest</h3>
+      <input class="w-[60vw] border-2 px-5 py-2 rounded-full hover:border-blue-500" type="search" placeholder="search">
+      <div class="flex gap-10 items-center">
+        <a href="/profile">Profile</a>
+        <a href="/feed">Feed</a>
+        <a class="px-3 py-2 bg-red-700 text-white rounded-full" href="/logout">Logout</a>
+      </div>
+    </div>
+ <% } %>

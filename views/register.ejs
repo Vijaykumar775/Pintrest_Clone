@@ -1,0 +1,18 @@
+<% include ./Partials/Header.ejs %>
+  <div class="w-full h-screen bg-center bg-cover bg-[url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN25hY3k4a25maXFibnl4N2NtaGhrNDZmNjVnM3J3NGpibjc5OXRndiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gFhZjOtzoutSvckWPM/200.webp)] flex items-center justify-center">
+    <div class="w-[30vw]  bg-white px-20 py-16 rounded-[4vh]">
+      <h1 class="text-3xl text-center font-semibold mb-6 tracking-tighte capitalize leading-none ">Create New Account.</h1>
+      <form action="/register" method="post">
+          <input class="block border-2 rounded-full mt-3 w-full px-4 py-4" type="text" name="name" placeholder="name">
+          <input class="block border-2 rounded-full mt-3 w-full px-4 py-4" type="email" name="email" placeholder="Email">
+          <input class="block border-2 rounded-full mt-3 w-full px-4 py-4" type="username" name="username" placeholder="username">
+        <input class="block border-2 rounded-full mt-3 px-4 py-4 w-full" type="password" name="password" placeholder="password">
+        <input class="block w-full px-3 py-2 cursor-pointer mt-3 bg-red-500 text-white rounded-[2vh] hover:bg-red-600" type="submit" value="Sign Up">
+        <p class="text-sm font-semibold mt-5 text-center">By continuing, you agree to Pinterest's Terms of Service; Opens a new tab and acknowledge you've read our Privacy Policy; Opens a new tab. Notice at collection; Opens a new tab.</p>
+        <a href="/" class="inline-block mt-5 w-full text-center text-blue-600 font-semibold"> Login  Exsting Account</a>
+      </form>
+
+
+    </div>
+  </div>
+  <% include ./Partials/Footer.ejs %>
